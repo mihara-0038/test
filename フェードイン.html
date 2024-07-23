@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title> フェードイン </title>
+</head>
+
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+  </html>
+
+  <main>
+    <div class="box">
+        <div class="box_item js-fade">フェードインする！</div>
+    </div>
+    <div class="box">
+        <div class="box_item js-fade">フェードインする！</div>
+    </div>
+    <div class="box">
+        <div class="box_item js-fade">フェードインする！</div>
+    </div>
+    <div class="box">
+        <div class="box_item js-fade">フェードインする！</div>
+    </div>
+    <div class="box">
+        <div class="box_item js-fade">フェードインする！</div>
+    </div>
+  </main>
+
+  <style>
+    main{
+        margin: 500px 0 100px;
+    }
+    .box{
+        margin-bottom: 100px;
+    }
+    .box_item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+        width: 300px;
+        height: 200px;
+        color: #fff;
+        background-color: #000066;
+    }
+    .js-fade{
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(50px);
+        transition: opacity 1s,visibility 1s,transform 1s;
+    }
+    .scroll{
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0px);
+    }
+  </style>
+
+  <script>
+    $(function(){
+        $(window).scroll(function(){
+            $('.js-fade').each(function(){
+                var pops = $(this).offset().top;
+                var scroll = $(window).scrollTop();
+                var windowHeight = $(window).height();
+                if(scroll > pops - windowHeight + 100){
+                    $(this).addClass('scroll');
+                }
+            });
+        });
+    });
+  </script>
+ 
