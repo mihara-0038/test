@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <title>模写模写模写</title>
+  <meta name="description" content="テキストテキストテキストテキストテキスト">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com"crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>  
+  <header id="header">
+    <div class="logo">
+        <a href="#"><img src="img/logo.svg" alt="FA EXHIBITION"></a>
+    </div>
+    <!--nav→ナビゲーションのセクション-->
+    <nav id="navi">
+        <ul class="menu">
+          <li><a href="#">TOP</a></li>
+          <li><a href="#information">INFORMATION</a></li>
+          <li><a href="#gallery">GALLERY</a></li>
+          <li><a href="#access">ACCESS</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+  <div class="container">
+    <main>
+      <div id="mainvisual">
+        <img src="img/mainvisual1.jpg" alt="">
+        <img src="img/mainvisual2.jpg" alt="">
+        <img src="img/mainvisual3.jpg" alt="">
+      </div>
+      <h1 class="site-title inview fadein">Hello Flower!<br>FA EXHIBITION 2021</h1>
+
+      <!--section→文書内で独立したセクションを作るための要素-->
+      <section id="information" class="inview fadein">
+        <h2 class="section-title">INFORMATION</h2>
+        <p>
+          <span class="info-date-en">2021 JUL 1(thu)-3(SAT)</span>
+          <span class="info-time-en">DAY1 10am-6pm OTHER 10am-5:30pm</span>
+        </p>
+        <p class="info-place">at PARK SIDE HALL</p>
+        <p class="info-date-ja">
+          2021年7月1日(木)-3日(土)<br>
+          Day1 10時~18時 その他 10時〜17時30分
+        </p>
+      </section>
+
+      <div id="side-btn">
+        <a href="#">FOR VISITOR</a>
+        <a href="#">FOR EXHIBITOR</a>
+      </div>
+
+      <section id="gallery" class="wrapper">
+        <h2 class="section-title inview fadein">GALLERY</h2>
+        <ul class="list">
+          <li class="inview fadein"><img src="img/flower1.jpg" alt="花①"></li>
+          <li class="inview fadein"><img src="img/flower2.jpg" alt="花②"></li>
+          <li class="inview fadein"><img src="img/flower3.jpg" alt="花③"></li>
+          <li class="inview fadein"><img src="img/flower4.jpg" alt="花④"></li>
+          <li class="inview fadein"><img src="img/flower5.jpg" alt="花⑤"></li>
+          <li class="inview fadein"><img src="img/flower6.jpg" alt="花⑥"></li>
+        </ul>
+      </section>
+
+      <section id="access">
+        <h2 class="section-title">ACCESS</h2>
+        <p class="place">PARK SIDE HALL</p>
+        <p class="address">
+          〒152-0035 東京都目黒区自由が丘1-1-1 PARK SIDE HALL<br>
+          PARK SIDE HALL,1-1-1- Jiyugaoka,Meguroku,Tokyo
+        </p>
+        <p class="contact">
+          Tel:03-1111-1111<br>
+          E-mail:info@XXXXXX.jp
+        </p>
+        <a class="btn" href="#" target="_blank">GOOGLE MAP</a>
+      </section>
+
+      <section id="contact" class="wrapper">
+        <h2 class="section-title">CONTACT</h2>
+        <a class="btn" href="#">出展に関するお問い合わせ</a>
+        <a class="btn" href="#">その他のお問い合わせ</a>
+      </section>
+
+      <div class="bg"></div>
+    </main>
+
+    <footer id="footer">
+      <div>
+        <p>FA EXHIBITION</p>
+        <p>〒152-0035東京都目黒区自由が丘1-1-1- PARK SIDE HALL</p>
+        <p class="contact">
+          Tel:03-1111-1111
+          E-mail:info@XXXXXX.jp
+        </p>
+        <ul class="sns">
+          <li><a href="#" >Twitter</a></li>
+          <li><a href="#" target="_blank">Facebook</a></li>
+          <li><a href="#" target="_blank">Instagram</a></li>
+        </ul>
+      </div>
+      <ul class="copyright">
+        <li><a href="#">PRIVACY POLICY</a></li>
+        <li>&copy;Fa EXHIBITION</li>
+      </ul>
+    </footer>
+  </div>
+</body>
+</html>
+
+<style>
+  @charset"UTF-8";
+
+  html{
+    font-size: 100%;
+  }
+  body{
+    color: #050507;
+    font-family: 'Source Sans Pro',sans-serif;
+    font-weight: 300;
+  }
+  a{
+    color: #fff;
+    text-decoration: none;
+  }
+  img{
+    max-width: 100%;
+    vertical-align: bottom;
+  }
+  li{
+    list-style: none;
+  }
+  .site-title{
+    font-size: 6.25rem;
+    font-weight: 300;
+    letter-spacing: 0.03em;
+    margin: 100px 0;
+  }
+
+  .section-title{
+    border-bottom: solid 1px #fff;
+    display: inline-block;
+    font-size: 3.75rem;
+    letter-spacing: 0.03em;
+    margin-bottom: 45px;
+  }
+  .wrapper{
+    max-width: 800px;
+    padding: 0 30px;
+    margin: 0 auto;
+  }
+  .container{
+    background: #050507;
+    color: #fff;
+    text-align: center;
+  }
+  #side-btn{
+    border: solid 1px #fff;
+    position: fixed;
+    right: -144px;
+    bottom: 200px;
+    transform: rotate(-90deg) translateY(60px);
+    transition: 0.6s;
+    z-index: 30;
+  }
+  #side-btn a{
+    width: 165px;
+    font-size: 0.875rem;
+    display: inline-block;
+    letter-spacing: 0.1em;
+    padding: 15px 0;
+    transition: 0.3s;
+  }
+  #side-btn a:last-of-type{
+    border-left: solid 1px #fff;
+  }
+  #side-btn a:hover{
+    opacity: 0.7;
+  }
+
+  .bg{
+    background: url("img/bg.jpg") center center repeat !important;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 10;
+  }
+  .fadein{
+    opacity: 1;
+    transform: translate(0,50%);
+    transition: 2s;
+  }
+  .fadein.show{
+    transform: translate(0,0);
+    opacity: 1;
+  }
+  .logo{
+    line-height: 1px;
+    position: fixed;
+    top: 35px;
+    left: 30px;
+    z-index: 40;
+    display: none;
+  }
+  .logo a{
+    display: block;
+  }
+  .hamburger{
+    width: 42px;
+    height: 42px;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    right: 25px;
+    z-index: 40;
+    display: none;
+  }
+  .hamburger span{
+    width: 30px;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    left: 6px;
+    transition: 0.5s ease-in-out;
+  }
+  .hamburger span:nth-child(1){
+    top: 11px;
+  }
+  .hamburger span:nth-child(2){
+    top:21px;
+  }
+  .hamburger span:nth-child(3){
+    top:31px;
+  }
+  .hamburger.active span:nth-child(1){
+    top: 21px;
+    left: 6px;
+    transform: rotate(-45deg);
+  }
+  .hamburger.active span:nth-child(2),
+  .hamburger.active span:nth-child(3){
+    top: 21px;
+    transform: rotate(45deg);
+  }
+  #navi{
+    width: 100%;
+    background-color: #fff;
+    color: #050507;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+    transform: translateY(-100%);
+    transition: 0.6s;
+    z-index: 30;
+  }
+  #navi ul{
+    width: 100%;
+    background-color: #050507;
+    padding: 80px 0 30px 0;
+  }
+  #navi ul li{
+    padding: 10px 0;
+  }
+  #navi ul li a{
+    display: block;
+  }
+  #navi.active{
+    transform: translateY(0%);
+  }
+  #mainvisual{
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+  }
+  #mainvisual img{
+    width: calc(100%/3);
+    height: 100vh;
+    flex-shrink: 0;
+    object-fit: cover;
+  }
+  #information{
+    margin-bottom: 140px;
+  }
+  #information .info-date-en{
+    display: block;
+    font-size: 1.5rem;
+  }
+  #information.info-time-en{
+    display: block;
+    font-size: 1.125rem;
+  }
+  #information .info-place{
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin: 20px 0;
+  }
+  #information .info-date-ja{
+    font-size: 1.125rem;
+  }
+  #gallery{
+    margin-bottom: 480px;
+  }
+  #gallery .list li{
+    margin-bottom: 60px;
+  }
+  #gallery .list li img{
+    width: 48%;
+  }
+  /*odd：奇数の子要素*/
+  #gallery .list li:nth-child(odd){
+    text-align: left;
+  }
+  /*even：偶数の子要素*/
+  #gallery .list li:nth-child(even){
+    text-align: right;
+  }
+  #access{
+    margin-bottom: 480px;
+    position: relative;
+    z-index: 20;
+  }
+  #access .place{
+    font-size: 1.75rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+  #access .address{
+    margin-bottom: 20px;
+  }
+  #access .contact{
+    margin-bottom: 30px;
+  }
+  #access .btn{
+    border: solid 1px #fff;
+    color: #fff;
+    display: inline-block;
+    padding: 15px 82px;
+    transition: 0.3s;
+  }
+  #access .btn:hover{
+    background-color: #050507;
+  }
+  #contact{
+    margin-bottom: 200px;
+    position: relative;
+    z-index: 20;
+  }
+  #contact .btn{
+    width: 400px;
+    border: solid 1px #7d7d7d;
+    color: #fff;
+    display: block;
+    padding: 30px 0;
+    margin: 0 auto 20px auto;
+    position: relative;
+    transition: 0.3s;
+  }
+  #contact .btn::before,
+  #contact .btn::after{
+    content: "";
+    position: absolute;
+    right: -40px;
+    height: 1px;
+    background-color: #fff;
+    transition: 0.3s;
+  }
+  #contact .btn::before{
+    width: 120px;
+    top: 48px;
+  }
+  #contact .btn::after{
+    width: 15px;
+    top:45px;
+    transform: rotate(25deg);
+  }
+  #contact .btn:hover{
+    opacity: 0.7;
+  }
+  #contact .btn:hover::before,
+  #contact .btn::after{
+    right: -50px;
+  }
+
+  #footer{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    border-top: solid 1px #fff;
+    font-size: 0.75rem;
+    padding: 80px 30px;
+    text-align: left;
+  }
+  #footer p{
+    line-height: 1.6;
+  }
+  #footer .sns{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+  }
+  footer .sns li{
+    margin-right: 15px;
+  }
+  #footer .copyright{
+    display: flex;
+    align-items: center;
+  }
+  #footer .copyright li:last-child{
+    margin-left: 30px;
+  }
+
+  @media screen and(max-eidth:900px) {
+    .site-title{
+      font-size: 3rem;
+      margin: 50px 0;
+    }
+    .section-title{
+      font-size: 2rem;
+    }
+
+    #information{
+      margin-bottom: 80px;
+    }
+    #information .info-date-en,
+    #information .info-time-en,
+    #information .info-date-ja{
+      font-size: 1rem;
+    }
+    #information .info-place{
+      font-size: 2rem;
+    }
+    #gallery{
+      margin-bottom: 280px;
+    }
+    #gallery .list li{
+      margin-bottom: 30px;
+    }
+    #gallery .list li img{
+      width: 100%;
+    }
+
+    #access{
+      margin-bottom: 280px;
+    }
+    #contact .btn{
+      width: 100%;
+    }
+    #contact .btn::before,
+    #contact .btn::after{
+      content: none;
+    }
+
+    #footer{
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 60px 30px;
+    }
+    #footer .sns{
+      margin-bottom: 30px;
+    }
+  }
+</style>
+
+<script>
+  $(function(){
+    $('.hamburger').on('click',function(){
+      hamburger();
+    });
+    $('#navi a').on('click',function(){
+      hamburger();
+    });
+
+  $('a[href^="#"]').click(function(){
+    let href=$(this).attr("href");
+    let target = $(href == "#"|| href ==""? 'html': href);
+    let position = target.offset().top;
+
+    $("html,body").animate({scrollTop:position},600,"swing");
+    return false;
+  });
+
+  /*フェード表示*/
+  $(".inview").on("inview",function(event,isInView){
+    if(isInView){
+      $(this).stop().addClass("show");
+    }
+  });
+
+  /*スクロール時のイベント*/
+  $(window).scroll(function() {
+    let scroll = $(window).scrollTop();
+
+    mv_scale(scroll);
+
+    if(scroll>520){
+      $('.logo').fadeIn(500);
+      $('.hamburger').fadeIn(500);
+    }else{
+      $('.logo').fadeOut(500);
+      $('.hamburger').fadeOut(500);
+    }
+
+    let gallery_position = $('#gallery').offset().top - $(window).height();
+    let access_position = $('#access').offset().top - $(window).height();
+
+    if(window.innerWidth>900){
+      if(scroll > gallery_position){           
+       if(scroll < access_position){
+        $('#side-btn').css({
+          'transform':'rotate(-90deg) translateY(0)'
+         });
+       }else{
+        $('#side-btn').css({
+          'transform':'rotate(-90deg) translateY(60px)'
+        });
+      }
+    }else{
+      $('#side-btn').css({
+        'transform':'rotate(-90deg) taranslateY(60px)'
+      });
+    }
+  }
+
+  /*Accessの背景画像を表示*/
+  let contact_position = $('#contact').offset().top - $(window).height();
+  if(scroll > access_position){
+    if(scroll < contact_position){
+      $('.bg').fadeIn(500);
+    }else{
+      $('.bg').fadeOut(500);
+    }
+    }else{
+      $('.bg').fadeOut(500);
+    }
+  });
+  
+  /*画面読み込み時と画面幅変更時のイベント*/
+  $(window).on('load resize',function(){
+    let scroll = $(window).scrollTop();
+    /*メインビジュアルの拡大、縮小*/
+    mv_scale(scroll);
+  });
+});
+
+  /*ハンバーガーメニュー(共通処理)*/
+  function hamburger(){
+    $('.hamburger').toggleClass('active');
+    if($('.hamburger').hasClass('active')){
+      $('#navi').addClass('active');
+    }else{
+      $('#navi').removeClass('active');
+    }
+  }
+
+  /*メインビジュアルの拡大、縮小(共通処理)*/
+  function mv_scale(scroll){
+    if(window.innerWidth>900){
+      $('#mainvisual img').css({
+        'width':100/3 + scroll/10 + '%'
+      })
+    }else{
+      $('#mainvisual img').css({
+        'width':100/3 - scroll/10 + '%'
+      });
+    }
+  }
+
+
+</script>
+
+
+
+
+            
